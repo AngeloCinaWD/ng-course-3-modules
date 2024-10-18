@@ -13,6 +13,12 @@ import {
 } from "@angular/common/http";
 import { CoursesService } from "./services/courses.service";
 
+// un modulo è un'unità organizzativa che contiene componenti, direttive, services etc che possono essere raggruppati e pubblicati indipendentemente dalla nostra app, quindi riutilizzabili
+// un modulo è definito dal decoratore @NgModule() che ha 4 proprietà
+// declarations: un array che contiene una lista di componenti, direttive e pipe appartenenti al modulo
+// bootstrap: identifica il componente root dell'app, di solito è uno solo
+// imports: ci sono i moduli dipendenti del modulo, BrowserModule contiene una serie di service per far funzionare un progetto ng nei browser, per far funzionare ngFor, ngIf etc
+// providers: vengono definiti i providers per far funzionare i services, un service dichiarato qui non ha bisogno della proprietà ProvidedIn: "root" nel decoratore
 @NgModule({
   declarations: [
     AppComponent,
